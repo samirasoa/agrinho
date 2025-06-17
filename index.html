@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festa do Pinhão</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom, #FAF3DD, #FFE066);
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #fffbe6;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      animation: fadeUp 1s ease-in-out;
+    }
+
+    .titulo {
+      text-align: center;
+      color: #C1121F;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px #ffa07a;
+      animation: scaleIn 0.8s ease-out;
+    }
+
+    .imagem-central img {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .imagem-central img:hover {
+      transform: scale(1.03);
+    }
+
+    .sublegenda {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #6C757D;
+      margin: 15px 0 30px 0;
+      opacity: 0.9;
+    }
+
+    .menu-principal ul {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      list-style: none;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .menu-principal a {
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #003049;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: all 0.4s ease;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-principal a:hover {
+      background-color: #F77F00;
+      transform: translateY(-3px);
+    }
+
+    .secao {
+      background-color: #fefefe;
+      border-left: 10px solid #F77F00;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .secao h2 {
+      font-size: 1.8rem;
+      color: #D62828;
+      margin-bottom: 15px;
+    }
+
+    .secao p, .secao ul {
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .secao ul {
+      margin-left: 20px;
+      list-style-type: square;
+    }
+
+    strong {
+      color: #0077b6;
+    }
+
+    @media (max-width: 768px) {
+      .menu-principal ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .titulo {
+        font-size: 2rem;
+      }
+
+      .imagem-central img {
+        width: 100%;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="titulo">Festa do Pinhão: conectando campo e cidade com tecnologia</h1>
+
+    <div class="imagem-central">
+      <img src="img/festa-pinhao.png" alt="Banner Festa do Pinhão" />
+    </div>
+
+    <p class="sublegenda">
+      Do campo ao coração da cidade, a festa do pinhão celebra nossas raízes
+    </p>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#trajes">Trajes</a></li>
+        <li><a href="#musica">Gêneros musicais</a></li>
+        <li><a href="#tradicoes">Tradições</a></li>
+        <li><a href="#culinaria">Culinária</a></li>
+      </ul>
+    </nav>
+
+    <section id="historia" class="secao">
+      <h2>História</h2>
+      <p>A Festa Nacional do Pinhão tem suas origens em Lages, Santa Catarina... (adicione o conteúdo completo aqui)</p>
+    </section>
+
+    <section id="trajes" class="secao">
+      <h2>Trajes</h2>
+      <p>Os trajes típicos são as pilchas... (adicione o conteúdo completo aqui)</p>
+    </section>
+
+    <section id="musica" class="secao">
+      <h2>Gêneros musicais</h2>
+      <p>Os estilos vão de sertanejo até funknejo... (adicione o conteúdo completo aqui)</p>
+    </section>
+
+    <section id="tradicoes" class="secao">
+      <h2>Tradições</h2>
+      <p>A festa conta com Sapecada, rodeios, oficinas e muito mais... (adicione o conteúdo completo aqui)</p>
+    </section>
+
+    <section id="culinaria" class="secao">
+      <h2>Culinária</h2>
+      <p>Entrevero de pinhão, pastel de pinhão, bolos e muito mais... (adicione o conteúdo completo aqui)</p>
+    </section>
+  </div>
+</body>
+</html>
